@@ -8,3 +8,13 @@ const streamers = [
 	{name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'},
 	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ];
+
+const searchInput = ''; // Puedes cambiar esto para probar con diferentes entradas
+
+// Usamos .filter() para encontrar los streamers que coinciden con el input
+const filteredStreamers = streamers.filter(streamer => 
+    streamer.name.toLowerCase().includes(searchInput.toLowerCase())
+);
+
+// Mostramos los resultados por consola
+console.log(filteredStreamers);
